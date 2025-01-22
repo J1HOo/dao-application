@@ -28,6 +28,7 @@
         success: function (data) {
             if (data) {
                 $("#userDetail").html(`
+                    <img src=" ${data.imagePath}" alt="img">
                     <p><strong>유저 닉네임 : </strong>    ${data.username} </p>
                     <p><strong>유저 비밀번호 : </strong>    ${data.password} </p>
                     `);
