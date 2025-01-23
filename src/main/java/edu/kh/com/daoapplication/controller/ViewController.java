@@ -44,12 +44,19 @@ public class ViewController {
     public String getBooks() {
         return "books";
     }
+
     @GetMapping("/book") //id 조회
     public String getBookById(@RequestParam("id") int id) {
         return "bookDetail";
     }
+
     @GetMapping("/book/add")
     public String saveBook() {
         return "newBooks";
+    }
+
+    @GetMapping("/inputEmail")
+    public String inputEmail() {
+        return "inputEmail"; //inputEmail.html 템플릿으로 접속하는 주소 설정
     }
 }
